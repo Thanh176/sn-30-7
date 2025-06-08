@@ -194,64 +194,8 @@
       position: fixed;
       width: 120px;
       height: 120px;
-      border-radius: 20px;
-      object-fit: cover;
-      box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
-      opacity: 0;
-      pointer-events: none;
-      border: 5px solid white;
-      background: white;
-      z-index: 30;
-      transition: transform 3s ease, opacity 3s ease;
-      transform: translate(-50%, -50%);
-    }
-
-    /* Responsive cho điện thoại */
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 2.2em;
-        margin-top: 50px;
-      }
-      .message {
-        font-size: 1.1em;
-        max-width: 90%;
-      }
-      .gift-btn {
-        font-size: 1.1em;
-        padding: 12px 28px;
-      }
-      .cake {
-        width: 120px;
-        height: 120px;
-        top: 65vh !important;
-      }
-      .firework-container {
-        width: 140px;
-        height: 140px;
-      }
-      .photo {
-        width: 70px !important;
-        height: 70px !important;
-        border-radius: 15px !important;
-        border-width: 3px !important;
-        box-shadow: 0 0 10px rgba(255, 105, 180, 0.6) !important;
-      }
-    }
-  </style>
-</head>
-<body>
-  <audio id="music" loop src="https://cdn.discordapp.com/attachments/1381191585923858525/1381193494655139970/Happy_Birthday_Piano_Version.mp3?ex=6846a02e&is=68454eae&hm=58f90413dda4e679aa9121f8cac84445d075bcf70d02db99cb6d1ac59a1ade45&"></audio>
-  <button class="music-btn" onclick="toggleMusic()">🎵</button>
-
-  <h1>🎂 Chúc mừng sinh nhật! 🎉</h1>
-  <div class="message" id="typing"></div>
-  <button class="gift-btn" id="giftBtn">🎁 Mở quà bất ngờ</button>
-
-  <div class="cake" id="cake"></div>
-  <div class="firework-container" id="fireworkContainer"></div>
-
-  <script>
-    const message = "Chúc mừng sinh nhật người con gái tuyệt vời nhất cuộc đời anh! Anh mong em luôn mạnh khỏe, luôn rạng rỡ và hạnh phúc. Anh sẽ luôn cố gắng để mang đến cho em những điều đẹp nhất, vì em xứng đáng được yêu thương trọn vẹn.";
+      bordinn tất cảa......🌷🌷 
+ ";
     let idx = 0;
     function type() {
       if (idx < message.length) {
@@ -308,11 +252,11 @@
 
     const cake = document.getElementById('cake');
     const photoUrls = [
-      "https://media.discordapp.net/attachments/1368956522813460522/1378632265281835038/1f6ecb67-139c-4723-80dd-49e30cc2849f_720_405.jpg?ex=683d4ed9&is=683bfd59&hm=6b66f075f395901e1701e8f6efd83d3efcde49b8ea4965c5878374c011327387&=&format=webp&width=900&height=506",
-      "https://media.discordapp.net/attachments/1368956522813460522/1378632265587888240/anh-gai-xinh-che-mat-18.jpg?ex=683d4ed9&is=683bfd59&hm=e2cabd90a6d968ae2fec00681cb8c139cb96cd61bcc030d257a90a0c0856b061&=&format=webp&width=526&height=703",
-      "https://media.discordapp.net/attachments/1368956522813460522/1378632266019766353/anh-gai-xinh-che-mat-32.jpg?ex=683d4ed9&is=683bfd59&hm=e8771ef3f6d348637bf325190aeffbaefe261cb9d1c4a590a5de7b9d91ebf123&=&format=webp&width=526&height=703",
-      "https://media.discordapp.net/attachments/1368956522813460522/1378632266351247390/channels4_profile.jpg?ex=683d4eda&is=683bfd5a&hm=b0a31f7ce898141f2340c89938a06de0f6dd98adf2ad079f7bc110f186415755&=&format=webp&width=703&height=703",
-      "https://media.discordapp.net/attachments/1368956522813460522/1378632266976333834/Hinh-gai-xinh-k8-cute.jpg?ex=683d4eda&is=683bfd5a&hm=4114e3180bf8a032193eecabfb3ae151ca6c236ee72a65e6302b685f3171f9c0&=&format=webp&width=703&height=703"
+      "https://cdn.discordapp.com/attachments/1381191585923858525/1381193629355343933/iu8.jpg?ex=6846a04e&is=68454ece&hm=ad74561edbaea30cd636a34ad9852ca7d90aace378ff795fb859ab5cbd08d905&",
+      "https://cdn.discordapp.com/attachments/1381191585923858525/1381193575941013587/iu6jpg.jpg?ex=6846a041&is=68454ec1&hm=d76c2b5c0fc4b0e414bc2ce3c503deb20af9cfd0759e274edaf5103047e49c7e&",
+      "https://cdn.discordapp.com/attachments/1381191585923858525/1381193629846208673/iu10.jpg?ex=6846a04e&is=68454ece&hm=e2719faca56c168126e69d37106cf1ba8d094e83d7ce50b87a91050cf0159489&",
+      "https://cdn.discordapp.com/attachments/1381191585923858525/1381193630328291388/iu12.jpg?ex=6846a04e&is=68454ece&hm=8578057c8e2024c6d85181ab7cd89673ad895fec31add536c4a4880d6109b168&",
+      "https://cdn.discordapp.com/attachments/1381191585923858525/1381193629594554440/iu9.jpg?ex=6846a04e&is=68454ece&hm=e233f873027482fc91da957dc66b49135304471b070d227a4112ef9ff6f5b8b3&"
     ];
 
     document.getElementById("giftBtn").addEventListener("click", () => {
