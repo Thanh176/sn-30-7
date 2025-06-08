@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chúc mừng sinh nhật bạn tao🎉🥳</title>
+  <title>Chúc mừng sinh nhật🎉🥳</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
@@ -190,12 +190,68 @@
       100% { opacity: 0; transform: translateY(-100px) scaleY(3); }
     }
 
-    .photo {
+        .photo {
       position: fixed;
       width: 120px;
       height: 120px;
-      bordinn tất cảa......🌷🌷 
- ";
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+      opacity: 0;
+      pointer-events: none;
+      border: 5px solid white;
+      background: white;
+      z-index: 30;
+      transition: transform 3s ease, opacity 3s ease;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Responsive cho điện thoại */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2em;
+        margin-top: 50px;
+      }
+      .message {
+        font-size: 1.1em;
+        max-width: 90%;
+      }
+      .gift-btn {
+        font-size: 1.1em;
+        padding: 12px 28px;
+      }
+      .cake {
+        width: 120px;
+        height: 120px;
+        top: 65vh !important;
+      }
+      .firework-container {
+        width: 140px;
+        height: 140px;
+      }
+      .photo {
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 15px !important;
+        border-width: 3px !important;
+        box-shadow: 0 0 10px rgba(255, 105, 180, 0.6) !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio id="music" loop src="https://cdn.discordapp.com/attachments/1381191585923858525/1381193494655139970/Happy_Birthday_Piano_Version.mp3?ex=6846a02e&is=68454eae&hm=58f90413dda4e679aa9121f8cac84445d075bcf70d02db99cb6d1ac59a1ade45&"></audio>
+  <button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+  <h1>🎂 Chúc mừng sinh nhật! 🎉</h1>
+  <div class="message" id="typing"></div>
+  <button class="gift-btn" id="giftBtn">🎁 Mở quà bất ngờ</button>
+
+  <div class="cake" id="cake"></div>
+  <div class="firework-container" id="fireworkContainer"></div>
+
+  <script>
+    const message = "Chúc mừng sinh nhật người con gái tuyệt vời nhất cuộc đời anh! Anh mong em luôn mạnh khỏe, luôn rạng rỡ và hạnh phúc. Anh sẽ luôn cố gắng để mang đến cho em những điều đẹp nhất, vì em xứng đáng được yêu thương trọn vẹn.";
     let idx = 0;
     function type() {
       if (idx < message.length) {
